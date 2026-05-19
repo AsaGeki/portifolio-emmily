@@ -26,11 +26,11 @@ export function Section({
       <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
         <div className="mb-10 sm:mb-14">
           {eyebrow ? (
-            <p className="text-sm tracking-[0.22em] uppercase text-[color:var(--muted)]">
+            <p className="text-sm tracking-[0.22em] uppercase text-muted">
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-3 text-balance font-[family-name:var(--font-serif)] text-3xl leading-[1.05] text-[color:var(--foreground)] sm:text-5xl">
+          <h2 className="mt-3 text-balance font-serif text-3xl leading-[1.05] text-foreground sm:text-5xl">
             {title}
           </h2>
         </div>

@@ -15,7 +15,7 @@ export function FloralOrnament({
       {...props}
     >
       <svg
-        className="absolute -right-24 -top-20 h-[28rem] w-[28rem] opacity-70"
+        className="absolute -right-24 -top-20 h-112 w-md opacity-70"
         viewBox="0 0 200 200"
         fill="none"
       >
@@ -26,7 +26,7 @@ export function FloralOrnament({
         </g>
       </svg>
       <svg
-        className="absolute -left-32 -bottom-28 h-[30rem] w-[30rem] opacity-70"
+        className="absolute -left-32 -bottom-28 h-120 w-120 opacity-70"
         viewBox="0 0 200 200"
         fill="none"
       >
