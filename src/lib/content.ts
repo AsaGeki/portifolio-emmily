@@ -16,6 +16,7 @@ export const about = {
 };
 
 export const services = {
+  title: "",
   items: [
     {
       title: "Social Media",
