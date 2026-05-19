@@ -16,7 +16,6 @@ export const about = {
 };
 
 export const services = {
-  title: "Como posso ajudar sua empresa?",
   items: [
     {
       title: "Social Media",
