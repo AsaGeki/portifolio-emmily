@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
-import { Allura, Playfair_Display, Inter } from "next/font/google";
+import { Allura, Geist, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
 
-const fontSans = Inter({
-  variable: "--font-sans",
-  subsets: ["latin"],
-});
+const fontSans = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const fontSerif = Playfair_Display({
   variable: "--font-serif",
@@ -39,7 +37,12 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${fontSans.variable} ${fontSerif.variable} ${fontScript.variable} h-full antialiased scroll-smooth`}
+      className={cn(
+        "h-full scroll-smooth antialiased font-sans",
+        fontSans.variable,
+        fontSerif.variable,
+        fontScript.variable,
+      )}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

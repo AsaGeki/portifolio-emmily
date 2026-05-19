@@ -1,8 +1,5 @@
 import type { HTMLAttributes, ReactNode } from "react";
-
-function cn(...classes: Array<string | undefined | false>) {
-  return classes.filter(Boolean).join(" ");
-}
+import { cn } from "@/lib/utils";
 
 export function Section({
   id,
@@ -42,4 +39,3 @@ export function Section({
     </section>
   );
 }
-

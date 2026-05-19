@@ -100,8 +100,6 @@ export const dailyRates = {
 };
 
 export const contact = {
-  title: "Obrigado!",
-  cta:
-    "Vamos transformar a imagem do seu negócio? Entre em contato para reservar sua data.",
+  title: "Obrigada!",
+  cta: "Vamos transformar a imagem do seu negócio? Entre em contato para reservar sua data.",
 };
-

@@ -1,8 +1,5 @@
 import type { HTMLAttributes } from "react";
-
-function cn(...classes: Array<string | undefined | false>) {
-  return classes.filter(Boolean).join(" ");
-}
+import { cn } from "@/lib/utils";
 
 export function FloralOrnament({
   className,
@@ -10,7 +7,10 @@ export function FloralOrnament({
 }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={cn("pointer-events-none absolute inset-0 overflow-hidden", className)}
+      className={cn(
+        "pointer-events-none absolute inset-0 overflow-hidden",
+        className,
+      )}
       aria-hidden="true"
       {...props}
     >
@@ -39,4 +39,3 @@ export function FloralOrnament({
     </div>
   );
 }
-
