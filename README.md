@@ -1,16 +1,32 @@
-Portfólio/proposta comercial da Emmily Dias, feito em [Next.js](https://nextjs.org) + Tailwind.
+# Portfólio — Emmily Dias
+
+Projeto de portfólio/proposta comercial da **Emmily Dias**.
+
+Criado por **Arthur Gabriel Oliveira** (desenvolvedor backend) para a Emmily Dias, com foco em um site simples, bonito e fácil de manter.
+
+## Tecnologias
+
+- Next.js (App Router) + React + TypeScript
+- Tailwind CSS v4
+- shadcn/ui + lucide-react
+- Aceternity UI (motiões/efeitos)
+- Vercel (deploy)
 
 ## Getting Started
 
-Run the dev server:
+Rodar localmente:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-Edite a página em `src/app/page.tsx` e o conteúdo em `src/lib/content.ts`.
+## Estrutura
+
+- Página principal: `src/app/page.tsx`
+- Conteúdo (textos/valores): `src/lib/content.ts`
+- Componentes UI: `src/components/ui/`
 
 ## Deploy (Vercel)
 
