@@ -115,7 +115,7 @@ export default function Home() {
               </h1>
               <div className="mx-auto mt-6 max-w-2xl">
                 <TextGenerateEffect
-                  words="Conteúdos em alta definição, com estética dinâmica e pensada para engajar."
+                  words="Conteúdos em alta definição, com estratégia dinâmica, pensados para engajar o seu negócio."
                   className="font-(family-name:--font-sans)"
                 />
               </div>
