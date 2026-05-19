@@ -3,6 +3,7 @@ export const identity = {
   roles: ["Social Media", "Filmmaker", "Editora"],
   email: "emmilydias10@gmail.com",
   phone: "(99) 99210-8710",
+  whatsappCountryCode: "55",
 };
 
 export const about = {
@@ -102,4 +103,33 @@ export const dailyRates = {
 export const contact = {
   title: "Obrigada!",
   cta: "Vamos transformar a imagem do seu negócio? Entre em contato para reservar sua data.",
+};
+
+export const projects = {
+  title: "Projetos feitos",
+  description:
+    "Alguns trabalhos e entregas já realizados. Edite essa lista com seus cases reais (links, vídeos, resultados).",
+  items: [
+    {
+      title: "Case 1",
+      description:
+        "Descreva rapidamente o objetivo e o resultado desse projeto.",
+      tags: ["Reels", "Social Media"],
+      href: "",
+    },
+    {
+      title: "Case 2",
+      description:
+        "Descreva rapidamente o objetivo e o resultado desse projeto.",
+      tags: ["Filmmaker", "Captação"],
+      href: "",
+    },
+    {
+      title: "Case 3",
+      description:
+        "Descreva rapidamente o objetivo e o resultado desse projeto.",
+      tags: ["Edição", "Stories"],
+      href: "",
+    },
+  ],
 };
