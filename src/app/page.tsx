@@ -46,9 +46,9 @@ export default function Home() {
   return (
     <div className="relative flex min-h-full flex-col">
       <header className="sticky top-0 z-20 border-b border-[color:var(--line)] bg-background/85 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
           <Link href="/" className="flex items-baseline gap-3">
-            <span className="font-[family-name:var(--font-script)] text-2xl leading-none text-primary">
+            <span className="font-[family-name:var(--font-script)] text-xl leading-none text-primary sm:text-2xl">
               {identity.name}
             </span>
             <span className="hidden text-xs tracking-[0.24em] uppercase text-muted-foreground sm:inline">
@@ -76,14 +76,14 @@ export default function Home() {
       </header>
 
       <main className="relative flex-1">
-        <section className="relative overflow-hidden py-20 sm:py-28">
+        <section className="relative overflow-hidden py-16 sm:py-28">
           <FloralOrnament />
           <Spotlight
-            className="-top-52 left-0 md:-top-44 md:left-16"
+            className="-top-64 left-1/2 -translate-x-1/2 md:-top-44 md:left-16 md:translate-x-0"
             fill="var(--primary)"
           />
           <div className="absolute left-0 top-0 h-full w-3 bg-primary" />
-          <div className="mx-auto w-full max-w-6xl px-6">
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
               <div className="mb-6 flex flex-wrap items-center justify-center gap-2">
                 <Badge variant="outline" className="rounded-full px-3 py-1">
@@ -101,7 +101,7 @@ export default function Home() {
                 {identity.roles.join(" - ")}
               </p>
 
-              <h1 className="mt-10 font-[family-name:var(--font-serif)] text-6xl leading-[0.95] text-foreground sm:text-7xl">
+              <h1 className="mt-8 text-balance font-[family-name:var(--font-serif)] text-5xl leading-[0.95] text-foreground sm:mt-10 sm:text-7xl">
                 PROPOSTA <span className="block text-primary">COMERCIAL</span>
               </h1>
               <div className="mx-auto mt-6 max-w-2xl">
@@ -116,7 +116,7 @@ export default function Home() {
                   href="#pacotes"
                   className={cn(
                     buttonVariants({ variant: "default", size: "lg" }),
-                    "h-12 rounded-full bg-foreground px-6 text-background hover:bg-foreground/90",
+                    "h-12 w-full rounded-full bg-foreground px-6 text-background hover:bg-foreground/90 sm:w-auto",
                   )}
                 >
                   Ver pacotes
@@ -125,7 +125,7 @@ export default function Home() {
                   href="#sobre"
                   className={cn(
                     buttonVariants({ variant: "outline", size: "lg" }),
-                    "h-12 rounded-full border-[color:var(--line)] bg-white/60 px-6 text-foreground backdrop-blur hover:bg-white",
+                    "h-12 w-full rounded-full border-[color:var(--line)] bg-white/60 px-6 text-foreground backdrop-blur hover:bg-white sm:w-auto",
                   )}
                 >
                   Conhecer mais
@@ -309,7 +309,7 @@ export default function Home() {
             {dailyRates.items.map((r) => (
               <Card
                 key={r.title}
-                className="rounded-[2rem] border border-[color:var(--line)] bg-[color:var(--accent-soft)]/55 p-8"
+                className="rounded-[2rem] border border-[color:var(--line)] bg-[color:var(--accent-soft)]/55 p-6 sm:p-8"
               >
                 <CardHeader className="px-0 pb-0 pt-0">
                   <CardTitle className="rounded-full bg-primary/20 px-4 py-2 text-center text-sm font-medium text-foreground">
@@ -324,7 +324,7 @@ export default function Home() {
                     <p className="text-sm font-semibold text-foreground">
                       A partir de:
                     </p>
-                    <p className="mt-2 font-[family-name:var(--font-serif)] text-5xl text-foreground">
+                    <p className="mt-2 font-[family-name:var(--font-serif)] text-4xl text-foreground sm:text-5xl">
                       {r.price}
                     </p>
                     <p className="mt-4 text-lg tracking-[0.2em] uppercase text-foreground/75">
@@ -337,10 +337,10 @@ export default function Home() {
           </div>
         </Section>
 
-        <section id="contato" className="relative overflow-hidden py-20 sm:py-28">
+        <section id="contato" className="relative overflow-hidden py-16 sm:py-28">
           <FloralOrnament className="opacity-70" />
           <div className="absolute left-0 top-0 h-full w-3 bg-primary" />
-          <div className="mx-auto w-full max-w-6xl px-6">
+          <div className="mx-auto w-full max-w-6xl px-4 sm:px-6">
             <div className="mx-auto max-w-4xl text-center">
               <p className="font-[family-name:var(--font-script)] text-5xl leading-none text-primary sm:text-6xl">
                 {identity.name}
@@ -348,7 +348,7 @@ export default function Home() {
               <p className="mt-5 text-xs tracking-[0.4em] uppercase text-foreground/80">
                 {identity.roles.join(" - ")}
               </p>
-              <h2 className="mt-10 font-[family-name:var(--font-serif)] text-7xl leading-[0.9] text-foreground sm:text-8xl">
+              <h2 className="mt-8 text-balance font-[family-name:var(--font-serif)] text-5xl leading-[0.9] text-foreground sm:mt-10 sm:text-8xl">
                 {contact.title}
               </h2>
               <p className="mt-8 text-sm tracking-[0.22em] uppercase text-foreground/80">
@@ -358,14 +358,14 @@ export default function Home() {
               <div className="mt-12 grid gap-4 sm:grid-cols-2">
                 <a
                   href={`mailto:${identity.email}`}
-                  className="group flex items-center justify-center gap-3 rounded-2xl border border-[color:var(--line)] bg-white/70 px-6 py-4 text-foreground backdrop-blur transition hover:bg-white"
+                  className="group flex flex-col items-center justify-center gap-2 rounded-2xl border border-[color:var(--line)] bg-white/70 px-4 py-4 text-foreground backdrop-blur transition hover:bg-white sm:flex-row sm:gap-3 sm:px-6"
                 >
                   <Mail className="h-6 w-6 text-foreground/70" />
-                  <span className="font-medium">{identity.email}</span>
+                  <span className="break-all font-medium">{identity.email}</span>
                 </a>
                 <a
                   href={`tel:${identity.phone.replace(/[^\\d+]/g, "")}`}
-                  className="group flex items-center justify-center gap-3 rounded-2xl border border-[color:var(--line)] bg-white/70 px-6 py-4 text-foreground backdrop-blur transition hover:bg-white"
+                  className="group flex flex-col items-center justify-center gap-2 rounded-2xl border border-[color:var(--line)] bg-white/70 px-4 py-4 text-foreground backdrop-blur transition hover:bg-white sm:flex-row sm:gap-3 sm:px-6"
                 >
                   <Phone className="h-6 w-6 text-foreground/70" />
                   <span className="font-medium">{identity.phone}</span>
@@ -384,7 +384,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-[color:var(--line)] py-8">
-        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-6 text-center text-sm text-muted-foreground sm:flex-row sm:text-left">
+        <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-between gap-4 px-4 text-center text-sm text-muted-foreground sm:flex-row sm:px-6 sm:text-left">
           <p>
             © {buildYear} {identity.name}
           </p>
