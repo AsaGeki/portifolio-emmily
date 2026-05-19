@@ -59,7 +59,7 @@ export default function Home() {
             <NavLink href="#servicos">Serviços</NavLink>
             <NavLink href="#beneficios">Benefícios</NavLink>
             <Link
-              href="/projetos"
+              href=""
               className="text-sm font-medium text-foreground/80 transition hover:text-foreground"
             >
               Projetos
